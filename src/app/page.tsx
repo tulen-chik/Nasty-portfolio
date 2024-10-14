@@ -175,11 +175,11 @@ a
             <div className="flex justify-center space-x-4 mb-8">
               <Button variant="outline" className="flex items-center border-primary text-primary hover:bg-primary hover:text-primary-foreground">
                 <Mail className="mr-2" size={18} />
-                anna@example.com
+                Soldatenkonastasia@gmail.com
               </Button>
               <Button variant="outline" className="flex items-center border-primary text-primary hover:bg-primary hover:text-primary-foreground">
                 <Phone className="mr-2" size={18} />
-                +7 (999) 123-45-67
+                +375 44 740 3616
               </Button>
             </div>
             <form className="space-y-4">
