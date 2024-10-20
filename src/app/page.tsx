@@ -118,7 +118,7 @@ function About() {
             <div className="relative w-48 h-48 md:w-64 md:h-64">
                 <Image
                     src="/avatar.jpg"
-                    alt="Анна Дизайнер"
+                    alt="Анастасия Дизайнер"
                     layout="fill"
                     objectFit="cover"
                     className="rounded-full border-4 border-primary"
@@ -127,7 +127,7 @@ function About() {
             <div>
                 <h2 className="text-2xl md:text-3xl font-bold mb-4 text-primary">О себе</h2>
                 <p className="text-base md:text-lg mb-4">
-                    Привет! Я Анна, креативный UI/UX дизайнер с 5-летним опытом создания интуитивных и привлекательных интерфейсов. Моя страсть - превращать сложные проблемы в простые и элегантные решения.
+                    Привет! Я Анастасия, креативный графический дизайнер с 5-летним опытом создания уникальных и запоминающихся дизайнерских решений, которые подчеркивают личность бренда и способствуют достижению его целей.
                 </p>
                 <div className="flex items-center space-x-2 text-muted-foreground">
                     <MapPin size={18} className="text-primary" />
@@ -286,7 +286,7 @@ function Contact() {
           <Button
               variant="outline"
               className="flex items-center justify-center border-primary text-primary hover:bg-primary hover:text-primary-foreground rounded"
-              onClick={() => copyToClipboard('anna@example.com', 'Email')}
+              onClick={() => copyToClipboard('Soldatenkonastasia@gmail.com', 'Email')}
           >
             <Mail className="mr-2" size={18} />
             Soldatenkonastasia@gmail.com
