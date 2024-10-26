@@ -46,7 +46,7 @@ function ProjectDialog({ project }: { project: Project }) {
                 </Card>
             </DialogTrigger>
             <DialogContent className="sm:max-w-[425px]">
-                <DialogHeader>
+                <DialogHeader className="pt-5">
                     <DialogTitle>{project.title}</DialogTitle>
                     <DialogDescription>
                         Детали проекта
@@ -83,7 +83,7 @@ function Header({ mobileMenuOpen, setMobileMenuOpen }: { mobileMenuOpen: boolean
   return (
       <header className="sticky top-0 z-10 backdrop-blur-sm bg-background/80 border-b border-muted">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <h1 className="text-xl md:text-2xl font-bold text-primary">Анастасия Дизайнер</h1>
+          <h1 className="text-xl md:text-2xl font-bold text-primary">Графический Дизайнер</h1>
           <nav className="hidden md:block">
             <ul className="flex space-x-4">
               <li><a href="#about" className="hover:text-primary transition-colors">О себе</a></li>
@@ -117,7 +117,7 @@ function About() {
         <section id="about" className="flex flex-col md:flex-row items-center gap-8">
             <div className="relative w-48 h-48 md:w-64 md:h-64">
                 <Image
-                    src="/avatar.jpg"
+                    src="/avatar.JPG"
                     alt="Анастасия Дизайнер"
                     layout="fill"
                     objectFit="cover"
@@ -131,7 +131,7 @@ function About() {
                 </p>
                 <div className="flex items-center space-x-2 text-muted-foreground">
                     <MapPin size={18} className="text-primary" />
-                    <span>Москва, Россия</span>
+                    <span>Минск, Беларусь</span>
                 </div>
             </div>
         </section>
@@ -143,7 +143,7 @@ function Experience() {
       "title": "Графический дизайнер",
       "company": "Самозанятость",
       "period": "2021 - настоящее время",
-      "description": "За это время я разработала более 200 уникальных работ, включая дизайн социальных сетей, инфографику для маркетплейсов, дизайн тары и упаковки, а также баннеры и интернет-рекламу. Кроме того, я занималась разработкой и дизайном pop-up книг и многими другими проектами. Мой путь в графическом дизайне позволяет мне постоянно совершенствовать свои навыки и расширять горизонты. Я нацелена на создание уникальных и эффективных решений для каждого проекта, уверенная, что дизайн должен не только привлекать внимание, но и выполнять практические функции.",
+      "description": "За это время я разработала более 200 уникальных работ, включая дизайн социальных сетей, инфографику для маркетплейсов, дизайн тары и упаковки, а также баннеры и интернет-рекламу. Кроме того, я занималась разработкой и дизайном pop-up книг и многими другими проектами. Мой путь в графическом дизайне позволяет мне постоянно совершенствовать свои навыки и расширять горизонты. Я нацелена на создание уникальных и эффективных решений для каждого проекта, уверена, что дизайн должен не только привлекать внимание, но и выполнять практические функции.",
       "skills": ["Дизайн социальных сетей", "Инфографика", "Дизайн упаковки", "Баннеры и реклама", "Pop-up книги", "Креативное мышление", "Адаптивный дизайн"]
     }
   ]
@@ -154,23 +154,24 @@ function Experience() {
             <div className="space-y-6">
                 {jobs.map((job, index) => (
                     <Card key={index} className="border-muted">
-                        <CardContent className="flex flex-col p-4 md:p-6">
-                            <div className="flex items-start">
-                                <Briefcase className="mr-4 mt-1 text-primary hidden md:block" />
-                                <div>
-                                    <h3 className="text-lg md:text-xl font-semibold text-primary">{job.title}</h3>
-                                    <p className="text-sm md:text-base text-muted-foreground">{job.company} | {job.period}</p>
-                                    <p className="mt-2 text-sm md:text-base">{job.description}</p>
-                                </div>
+                        <CardContent className="flex flex-col md:flex-row p-4 md:p-6">
+                            <div className="flex justify-center">
+                                <Briefcase className="w-18 h-18 text-primary shrink-0 mb-4 md:mb-0 md:mr-6" />
                             </div>
-                            <div className="mt-4">
-                                <h4 className="font-semibold mb-2 text-primary text-sm md:text-base">Полученные навыки:</h4>
-                                <div className="flex flex-wrap gap-2">
-                                    {job.skills.map((skill, skillIndex) => (
-                                        <span key={skillIndex} className="bg-secondary text-secondary-foreground px-2 py-1 rounded-full text-xs md:text-sm">
-                      {skill}
-                    </span>
-                                    ))}
+
+                            <div>
+                                <h3 className="text-lg md:text-xl font-semibold text-primary">{job.title}</h3>
+                                <p className="text-sm md:text-base text-muted-foreground">{job.company} | {job.period}</p>
+                                <p className="mt-2 text-sm md:text-base">{job.description}</p>
+                                <div className="mt-4">
+                                    <h4 className="font-semibold mb-2 text-primary text-sm md:text-base">Полученные навыки:</h4>
+                                    <div className="flex flex-wrap gap-2">
+                                        {job.skills.map((skill, skillIndex) => (
+                                            <span key={skillIndex} className="bg-secondary text-secondary-foreground px-2 py-1 rounded-full text-xs md:text-sm">
+                        {skill}
+                      </span>
+                                        ))}
+                                    </div>
                                 </div>
                             </div>
                         </CardContent>
@@ -191,27 +192,27 @@ function Education() {
     }
   ]
 
-  return (
-      <section id="education">
-        <h2 className="text-2xl md:text-3xl font-bold mb-8 text-primary">Образование</h2>
-        <div className="space-y-6">
-          {educations.map((edu, index) => (
-              <Card key={index} className="border-muted">
-                <CardContent className="flex flex-col p-4 md:p-6">
-                  <div className="flex items-start">
-                    <GraduationCap className="mr-4 mt-1 text-primary hidden md:block" />
-                    <div>
-                      <h3 className="text-lg md:text-xl font-semibold text-primary">{edu.degree}</h3>
-                      <p className="text-sm md:text-base text-muted-foreground">{edu.institution} | {edu.period}</p>
-                      <p className="mt-2 text-sm md:text-base">{edu.description}</p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-          ))}
-        </div>
-      </section>
-  )
+    return (
+        <section id="education">
+            <h2 className="text-2xl md:text-3xl font-bold mb-8 text-primary">Образование</h2>
+            <div className="space-y-6">
+                {educations.map((edu, index) => (
+                    <Card key={index} className="border-muted">
+                        <CardContent className="flex flex-col md:flex-row p-4 md:p-6">
+                            <div className="flex justify-center">
+                                <GraduationCap className="w-18 h-18 text-primary shrink-0 mb-4 md:mb-0 md:mr-6" />
+                            </div>
+                            <div>
+                                <h3 className="text-lg md:text-xl font-semibold text-primary">{edu.degree}</h3>
+                                <p className="text-sm md:text-base text-muted-foreground">{edu.institution} | {edu.period}</p>
+                                <p className="mt-2 text-sm md:text-base">{edu.description}</p>
+                            </div>
+                        </CardContent>
+                    </Card>
+                ))}
+            </div>
+        </section>
+    )
 }
 
 function Projects() {
