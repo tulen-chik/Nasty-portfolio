@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from "react"
+import {useCallback, useEffect, useState} from "react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
@@ -13,31 +13,61 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog"
-import { Briefcase, GraduationCap, Mail, MapPin, Menu, Phone, Send, X } from "lucide-react"
+import {Briefcase, ChevronLeft, ChevronRight, GraduationCap, Mail, MapPin, Menu, Phone, Send, X} from "lucide-react"
 import Image from "next/image"
 import { toast, ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import { sendEmail } from '@/actions/sendEmail'
+import useEmblaCarousel from 'embla-carousel-react'
 
 interface Project {
-  title: string
-  image: string
-  description: string
-  technologies: string[]
+    title: string
+    images: string[]
+    description: string
+    technologies: string[]
 }
 
 function ProjectDialog({ project }: { project: Project }) {
+    const [emblaRef, emblaApi] = useEmblaCarousel({ loop: false, align: 'start' })
+    const [currentIndex, setCurrentIndex] = useState(0)
+
+    const scrollPrev = useCallback(() => {
+        if (emblaApi) emblaApi.scrollPrev()
+    }, [emblaApi])
+
+    const scrollNext = useCallback(() => {
+        if (emblaApi) emblaApi.scrollNext()
+    }, [emblaApi])
+
+    const onSelect = useCallback(() => {
+        if (!emblaApi) return
+        setCurrentIndex(emblaApi.selectedScrollSnap())
+    }, [emblaApi])
+
+    useEffect(() => {
+        if (!emblaApi) return;
+        onSelect();
+        emblaApi.on('select', onSelect);
+
+        // Cleanup the event listener on component unmount
+        return () => {
+            emblaApi.off('select', onSelect);
+        };
+    }, [emblaApi, onSelect]);
+
+
     return (
         <Dialog>
             <DialogTrigger asChild>
                 <Card className="overflow-hidden cursor-pointer transition-transform hover:scale-105">
                     <div className="relative w-full h-48">
                         <Image
-                            src={project.image}
+                            src={project.images[0]}
                             alt={project.title}
                             layout="fill"
-                            objectFit="cover"
+                            objectFit="contain"
                             className="transition-transform hover:scale-105"
+                            loading="lazy"
                         />
                     </div>
                     <CardContent className="p-4">
@@ -45,22 +75,48 @@ function ProjectDialog({ project }: { project: Project }) {
                     </CardContent>
                 </Card>
             </DialogTrigger>
-            <DialogContent className="sm:max-w-[425px]">
-                <DialogHeader className="pt-5">
+            <DialogContent className="sm:max-w-[700px]">
+                <DialogHeader>
                     <DialogTitle>{project.title}</DialogTitle>
                     <DialogDescription>
                         Детали проекта
                     </DialogDescription>
                 </DialogHeader>
                 <div className="mt-4">
-                    <div className="relative w-full h-56">
-                        <Image
-                            src={project.image}
-                            alt={project.title}
-                            layout="fill"
-                            objectFit="cover"
-                            className="rounded-lg"
-                        />
+                    <div className="relative overflow-hidden" ref={emblaRef}>
+                        <div className="flex">
+                            {project.images.map((src, index) => (
+                                <div className="flex-[0_0_100%] min-w-0 relative h-96 mr-4" key={index}>
+                                    <Image
+                                        src={src}
+                                        alt={`${project.title} - изображение ${index + 1}`}
+                                        layout="fill"
+                                        objectFit={"contain"}
+                                        className="rounded-lg"
+                                        loading="lazy"
+                                    />
+                                </div>
+                            ))}
+                        </div>
+                        <Button
+                            variant="outline"
+                            size="icon"
+                            className="absolute top-1/2 left-2 transform -translate-y-1/2 z-10 mx-2"
+                            onClick={scrollPrev}
+                        >
+                            <ChevronLeft className="h-4 w-4" />
+                        </Button>
+                        <Button
+                            variant="outline"
+                            size="icon"
+                            className="absolute top-1/2 right-2 transform -translate-y-1/2 z-10 mx-2"
+                            onClick={scrollNext}
+                        >
+                            <ChevronRight className="h-4 w-4" />
+                        </Button>
+                    </div>
+                    <div className="mt-2 text-center text-sm text-muted-foreground">
+                        {currentIndex + 1} / {project.images.length}
                     </div>
                     <p className="mt-4">{project.description}</p>
                     <div className="mt-4">
@@ -122,6 +178,7 @@ function About() {
                     layout="fill"
                     objectFit="cover"
                     className="rounded-full border-4 border-primary"
+                    loading="lazy"
                 />
             </div>
             <div>
@@ -219,16 +276,58 @@ function Projects() {
   const projects: Project[] = [
     {
       title: "Pop-up book \"Свято-Успенски кафедральный собор\"",
-      image: "/cathedral.JPG",
+      images: ["/cathedral.JPG"],
       description: "Разработка и дизайн pop-up book \"Свято-Успенский кафедральный собор\", с использованием вытинанки.",
       technologies: ["Illustrator", "Photoshop"]
     },
     {
       title: "Дизайн упаковки чая \"Раніца\"",
-      image: "/me.JPG",
+      images: ["/me.JPG"],
       description: "Разработка и дизайн подарочной упаковки чая, с использованием вытинанки.",
       technologies: ["Illustrator", "Photoshop"]
-    }
+    },
+      {
+          title: "Упаковка макарон \"Макаронни\"",
+          images: ["/mac.JPG"],
+          description: "Разработка и дизайн подарочной упаковки чая, с использованием вытинанки.",
+          technologies: ["Illustrator", "Photoshop"]
+      },
+      {
+          title: "Защитное стекло",
+          images: ["/glass/glass-1.JPG", "/glass/glass-2.JPG", "/glass/glass-3.JPG", "/glass/glass-4.JPG", ],
+          description: "Разработка и дизайн подарочной упаковки чая, с использованием вытинанки.",
+          technologies: ["Illustrator", "Photoshop"]
+      },
+      {
+          title: "Наушники",
+          images: ["/headphones/headphones-1.JPG", "/headphones/headphones-2.JPG",  ],
+          description: "Разработка и дизайн подарочной упаковки чая, с использованием вытинанки.",
+          technologies: ["Illustrator", "Photoshop"]
+      },
+      {
+          title: "Принт для футболки",
+          images: ["/t-shirt/t-shirt-1.JPG", "/t-shirt/t-shirt-2.JPG", "/t-shirt/t-shirt-3.JPG", "/t-shirt/t-shirt-4.JPG", "/t-shirt/t-shirt-5.JPG",  ],
+          description: "Разработка и дизайн подарочной упаковки чая, с использованием вытинанки.",
+          technologies: ["Illustrator", "Photoshop"]
+      },
+      {
+          title: "Фотосессия",
+          images: ["/photo/2.JPG", "/photo/3.JPG", "/photo/7.JPG", "/photo/8.JPG", "/photo/9.JPG", "/photo/10.JPG" ],
+          description: "Разработка и дизайн подарочной упаковки чая, с использованием вытинанки.",
+          technologies: ["Illustrator", "Photoshop"]
+      },
+      {
+          title: "Фотосессия",
+          images: ["/poole/1.JPG", "/poole/3.JPG", "/poole/4.JPG", "/poole/5.JPG", "/poole/6.JPG", "/poole/14.JPG", "/poole/24.JPG", "/poole/28.JPG" ],
+          description: "Разработка и дизайн подарочной упаковки чая, с использованием вытинанки.",
+          technologies: ["Illustrator", "Photoshop"]
+      },
+      {
+          title: "Фотосессия татуировки",
+          images: ["/tatoo/1.JPG", "/tatoo/3.JPG", "/tatoo/4.JPG", "/tatoo/6.JPG", "/tatoo/9.JPG", "/tatoo/10.JPG", "/tatoo/17.JPG" ],
+          description: "Разработка и дизайн подарочной упаковки чая, с использованием вытинанки.",
+          technologies: ["Illustrator", "Photoshop"]
+      },
   ]
 
     return (
