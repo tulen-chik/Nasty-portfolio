@@ -289,44 +289,44 @@ function Projects() {
       {
           title: "Упаковка макарон \"Макаронни\"",
           images: ["/mac.jpg"],
-          description: "Разработка и дизайн подарочной упаковки чая, с использованием вытинанки.",
+          description: "Разработка и дизайн упаковки макарон для детей \"Макаронни\".",
           technologies: ["Illustrator", "Photoshop"]
       },
       {
-          title: "Защитное стекло",
+          title: "Инфографика для маркетплейсов \"Защитное стекло для Realme c11\"",
           images: ["/glass-1.jpg", "/glass-2.jpg", "/glass-3.jpg", "/glass-4.jpg", ],
-          description: "Разработка и дизайн подарочной упаковки чая, с использованием вытинанки.",
+          description: "Разработка и дизайн инфографики для маркетплейсов \"Защитное стекло для Realme c11\".",
           technologies: ["Illustrator", "Photoshop"]
       },
       {
-          title: "Наушники",
+          title: "Инфографика для маркетплейсов \"Наушники hoco\"",
           images: ["/headphones-1.jpg", "/headphones-2.jpg",  ],
-          description: "Разработка и дизайн подарочной упаковки чая, с использованием вытинанки.",
+          description: "Разработка и дизайн инфографики для маркетплейсов \"Наушники hoco\".",
           technologies: ["Illustrator", "Photoshop"]
       },
       {
-          title: "Принт для футболки",
+          title: "Инфографика для маркетплейсов \"Белая футболка с принтом \"",
           images: ["/t-shirt-1.jpg", "/t-shirt-2.jpg", "/t-shirt-3.jpg", "/t-shirt-4.jpg", "/t-shirt-5.jpg",  ],
-          description: "Разработка и дизайн подарочной упаковки чая, с использованием вытинанки.",
+          description: "Разработка и дизайн инфографики для маркетплейсов, а также разработка принта для футболки.",
           technologies: ["Illustrator", "Photoshop"]
       },
       {
-          title: "Фотосессия",
+          title: "Фотосессия \"Частный психолог\"",
           images: ["/photo/2.jpg", "/photo/3.jpg", "/photo/7.jpg", "/photo/8.jpg", "/photo/9.jpg", "/photo/10.jpg" ],
           description: "Разработка и дизайн подарочной упаковки чая, с использованием вытинанки.",
-          technologies: ["Illustrator", "Photoshop"]
+          technologies: ["фотографика", "Photoshop"]
       },
       {
-          title: "Фотосессия",
-          images: ["/poole/1.jpg", "/poole/3.jpg", "/poole/4.jpg", "/poole/5.jpg", "/poole/6.jpg", "/poole/14.jpg", "/poole/24.jpg", "/poole/28.jpg" ],
-          description: "Разработка и дизайн подарочной упаковки чая, с использованием вытинанки.",
-          technologies: ["Illustrator", "Photoshop"]
+          title: "Фотосессия \"бильярд\"",
+          images: ["/poole/1.jpg", "/poole/3.jpg", "/poole/4.jpg", "/poole/5.jpg", "/poole/6.jpg", "/poole/14.jpg", "/poole/24.jpg", "/poole/48.jpg" ],
+          description: "Фотоссесия для продажи бильярдных киев.",
+          technologies: ["фотографика", "Photoshop"]
       },
       {
-          title: "Фотосессия татуировки",
+          title: "Фотосессия \"Тату-салон\"",
           images: ["/tatoo/1.JPG", "/tatoo/3.JPG", "/tatoo/4.JPG", "/tatoo/6.JPG", "/tatoo/9.JPG", "/tatoo/10.JPG", "/tatoo/17.jpg" ],
-          description: "Разработка и дизайн подарочной упаковки чая, с использованием вытинанки.",
-          technologies: ["Illustrator", "Photoshop"]
+          description: "Фотоссесия для тату-салона \"Vipink\".",
+          technologies: ["фотографика", "Photoshop"]
       },
   ]
 
