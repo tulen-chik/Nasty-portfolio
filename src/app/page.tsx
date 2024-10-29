@@ -294,19 +294,19 @@ function Projects() {
       },
       {
           title: "Защитное стекло",
-          images: ["/glass/glass-1.JPG", "/glass/glass-2.JPG", "/glass/glass-3.JPG", "/glass/glass-4.JPG", ],
+          images: ["/glass-1.JPG", "/glass-2.JPG", "/glass-3.JPG", "/glass-4.JPG", ],
           description: "Разработка и дизайн подарочной упаковки чая, с использованием вытинанки.",
           technologies: ["Illustrator", "Photoshop"]
       },
       {
           title: "Наушники",
-          images: ["/headphones/headphones-1.JPG", "/headphones/headphones-2.JPG",  ],
+          images: ["/headphones-1.JPG", "/headphones-2.JPG",  ],
           description: "Разработка и дизайн подарочной упаковки чая, с использованием вытинанки.",
           technologies: ["Illustrator", "Photoshop"]
       },
       {
           title: "Принт для футболки",
-          images: ["/t-shirt/t-shirt-1.JPG", "/t-shirt/t-shirt-2.JPG", "/t-shirt/t-shirt-3.JPG", "/t-shirt/t-shirt-4.JPG", "/t-shirt/t-shirt-5.JPG",  ],
+          images: ["/t-shirt-1.JPG", "/t-shirt-2.JPG", "/t-shirt-3.JPG", "/t-shirt-4.JPG", "/t-shirt-5.JPG",  ],
           description: "Разработка и дизайн подарочной упаковки чая, с использованием вытинанки.",
           technologies: ["Illustrator", "Photoshop"]
       },
