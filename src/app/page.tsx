@@ -306,7 +306,7 @@ function Projects() {
       },
       {
           title: "Принт для футболки",
-          images: ["/t-shirt-1.JPG", "/t-shirt-2.JPG", "/t-shirt-3.JPG", "/t-shirt-4.JPG", "/t-shirt-5.JPG",  ],
+          images: ["/t-shirt-1.jpg", "/t-shirt-2.jpg", "/t-shirt-3.jpg", "/t-shirt-4.jpg", "/t-shirt-5.jpg",  ],
           description: "Разработка и дизайн подарочной упаковки чая, с использованием вытинанки.",
           technologies: ["Illustrator", "Photoshop"]
       },
