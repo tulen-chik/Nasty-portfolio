@@ -288,19 +288,19 @@ function Projects() {
     },
       {
           title: "Упаковка макарон \"Макаронни\"",
-          images: ["/mac.JPG"],
+          images: ["/mac.jpg"],
           description: "Разработка и дизайн подарочной упаковки чая, с использованием вытинанки.",
           technologies: ["Illustrator", "Photoshop"]
       },
       {
           title: "Защитное стекло",
-          images: ["/glass-1.JPG", "/glass-2.JPG", "/glass-3.JPG", "/glass-4.JPG", ],
+          images: ["/glass-1.jpg", "/glass-2.jpg", "/glass-3.jpg", "/glass-4.jpg", ],
           description: "Разработка и дизайн подарочной упаковки чая, с использованием вытинанки.",
           technologies: ["Illustrator", "Photoshop"]
       },
       {
           title: "Наушники",
-          images: ["/headphones-1.JPG", "/headphones-2.JPG",  ],
+          images: ["/headphones-1.jpg", "/headphones-2.jpg",  ],
           description: "Разработка и дизайн подарочной упаковки чая, с использованием вытинанки.",
           technologies: ["Illustrator", "Photoshop"]
       },
@@ -312,19 +312,19 @@ function Projects() {
       },
       {
           title: "Фотосессия",
-          images: ["/photo/2.JPG", "/photo/3.JPG", "/photo/7.JPG", "/photo/8.JPG", "/photo/9.JPG", "/photo/10.JPG" ],
+          images: ["/photo/2.jpg", "/photo/3.jpg", "/photo/7.jpg", "/photo/8.jpg", "/photo/9.jpg", "/photo/10.jpg" ],
           description: "Разработка и дизайн подарочной упаковки чая, с использованием вытинанки.",
           technologies: ["Illustrator", "Photoshop"]
       },
       {
           title: "Фотосессия",
-          images: ["/poole/1.JPG", "/poole/3.JPG", "/poole/4.JPG", "/poole/5.JPG", "/poole/6.JPG", "/poole/14.JPG", "/poole/24.JPG", "/poole/28.JPG" ],
+          images: ["/poole/1.jpg", "/poole/3.jpg", "/poole/4.jpg", "/poole/5.jpg", "/poole/6.jpg", "/poole/14.jpg", "/poole/24.jpg", "/poole/28.jpg" ],
           description: "Разработка и дизайн подарочной упаковки чая, с использованием вытинанки.",
           technologies: ["Illustrator", "Photoshop"]
       },
       {
           title: "Фотосессия татуировки",
-          images: ["/tatoo/1.JPG", "/tatoo/3.JPG", "/tatoo/4.JPG", "/tatoo/6.JPG", "/tatoo/9.JPG", "/tatoo/10.JPG", "/tatoo/17.JPG" ],
+          images: ["/tatoo/1.JPG", "/tatoo/3.JPG", "/tatoo/4.JPG", "/tatoo/6.JPG", "/tatoo/9.JPG", "/tatoo/10.JPG", "/tatoo/17.jpg" ],
           description: "Разработка и дизайн подарочной упаковки чая, с использованием вытинанки.",
           technologies: ["Illustrator", "Photoshop"]
       },
