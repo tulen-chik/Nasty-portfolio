@@ -13,12 +13,25 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog"
-import {Briefcase, ChevronLeft, ChevronRight, GraduationCap, Mail, MapPin, Menu, Phone, Send, X} from "lucide-react"
+import {
+    Briefcase,
+    ChevronLeft,
+    ChevronRight,
+    GraduationCap,
+    Instagram,
+    Mail,
+    MapPin,
+    Menu,
+    Phone,
+    Send,
+    X
+} from "lucide-react"
 import Image from "next/image"
 import { toast, ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import { sendEmail } from '@/actions/sendEmail'
 import useEmblaCarousel from 'embla-carousel-react'
+import Link from "next/link";
 
 interface Project {
     title: string
@@ -274,22 +287,22 @@ function Education() {
 
 function Projects() {
   const projects: Project[] = [
-    {
-      title: "Pop-up book \"Свято-Успенски кафедральный собор\"",
-      images: ["/cathedral.JPG"],
-      description: "Разработка и дизайн pop-up book \"Свято-Успенский кафедральный собор\", с использованием вытинанки.",
-      technologies: ["Illustrator", "Photoshop"]
-    },
-    {
-      title: "Дизайн упаковки чая \"Раніца\"",
-      images: ["/me.JPG", "/IMG_1841.JPG", "/IMG_1899.JPG", ],
-      description: "Разработка и дизайн подарочной упаковки чая, с использованием вытинанки.",
-      technologies: ["Illustrator", "Photoshop"]
-    },
       {
-          title: "Упаковка макарон \"Макаронни\"",
-          images: ["/mac.jpg"],
-          description: "Разработка и дизайн упаковки макарон для детей \"Макаронни\".",
+          title: "Фирменный стиль для кафе-пекарни \"Моретта\"",
+          images: ["/фирменный стиль1.jpg", "/фирменный стиль -2.jpg", ],
+          description: "Разработка и дизайн фирменного стиля для кафе-пекарни \"Моретта\".",
+          technologies: ["Illustrator", "Photoshop"]
+      },
+      {
+          title: "Календарь",
+          images: ["/календарь.jpg", ],
+          description: "Разработка и дизайн страницы в календаре.",
+          technologies: ["Illustrator", "Photoshop"]
+      },
+      {
+          title: "Плакаты \"ATI.SU\"",
+          images: ["/доставка  копия.jpg", "/вселенная.jpg", "/пакмен.jpg",],
+          description: "Разработка и дизайн плакатов на тему \"Биржа грузоперевозок ATI.SU\".",
           technologies: ["Illustrator", "Photoshop"]
       },
       {
@@ -310,6 +323,18 @@ function Projects() {
           description: "Разработка и дизайн инфографики для маркетплейсов, а также разработка принта для футболки.",
           technologies: ["Illustrator", "Photoshop"]
       },
+    {
+      title: "Pop-up book \"Свято-Успенски кафедральный собор\"",
+      images: ["/cathedral.JPG"],
+      description: "Разработка и дизайн pop-up book \"Свято-Успенский кафедральный собор\", с использованием вытинанки.",
+      technologies: ["Illustrator", "Photoshop"]
+    },
+    {
+      title: "Дизайн упаковки чая \"Раніца\"",
+      images: ["/me.JPG", "/IMG_1841.JPG", "/IMG_1899.JPG", ],
+      description: "Разработка и дизайн подарочной упаковки чая, с использованием вытинанки.",
+      technologies: ["Illustrator", "Photoshop"]
+    },
       {
           title: "Pop-up book \"Алиса в стране чудес\"",
           images: ["/IMG_3760.JPG", "/IMG_3763.JPG", "/IMG_3767.JPG", "/IMG_3768.JPG" ],
@@ -323,7 +348,7 @@ function Projects() {
           technologies: ["фотографика", "Photoshop"]
       },
       {
-          title: "Фотосессия \"бильярд\"",
+          title: "Фотосессия \"Бильярд\"",
           images: ["/poole/1.jpg", "/poole/3.jpg", "/poole/4.jpg", "/poole/5.jpg", "/poole/6.jpg", "/poole/14.jpg", "/poole/24.jpg", "/poole/48.jpg" ],
           description: "Фотоссесия для продажи бильярдных киев.",
           technologies: ["фотографика", "Photoshop"]
@@ -335,27 +360,9 @@ function Projects() {
           technologies: ["фотографика", "Photoshop"]
       },
       {
-          title: "Иллюстрации для принта на футболку",
-          images: ["/ilustration/a.jpg", "/ilustration/meat.jpg", ],
-          description: "Разработка и дизайн иллюстраций для принта на футболку.",
-          technologies: ["Illustrator", "Photoshop"]
-      },
-      {
-          title: "Плакаты \"ATI.SU\"",
-          images: ["/доставка  копия.jpg", "/вселенная.jpg", "/пакмен.jpg",],
-          description: "Разработка и дизайн плакатов на тему \"Биржа грузоперевозок ATI.SU\".",
-          technologies: ["Illustrator", "Photoshop"]
-      },
-      {
-          title: "Календарь",
-          images: ["/календарь.jpg", ],
-          description: "Разработка и дизайн страницы в календаре.",
-          technologies: ["Illustrator", "Photoshop"]
-      },
-      {
-          title: "Фирменный стиль для кафе-пекарни \"Моретта\"",
-          images: ["/фирменный стиль1.jpg", "/фирменный стиль -2.jpg", ],
-          description: "Разработка и дизайн фирменного стиля для кафе-пекарни \"Моретта\".",
+          title: "Упаковка макарон \"Макаронни\"",
+          images: ["/mac.jpg"],
+          description: "Разработка и дизайн упаковки макарон для детей \"Макаронни\".",
           technologies: ["Illustrator", "Photoshop"]
       },
       {
@@ -365,12 +372,17 @@ function Projects() {
           technologies: ["Illustrator", "Photoshop"]
       },
       {
+          title: "Иллюстрации для принта на футболку",
+          images: ["/ilustration/a.jpg", "/ilustration/meat.jpg", ],
+          description: "Разработка и дизайн иллюстраций для принта на футболку.",
+          technologies: ["Illustrator", "Photoshop"]
+      },
+      {
           title: "Логотип для vape shop \"Capybara vape\"",
           images: ["/capy.jpg"  ],
           description: "Разработка логотипа для vape shop \"Capybara vape\"",
           technologies: ["Illustrator", "Photoshop"]
       },
-
       {
           title: "Логотип для vape shop \"Start Vape Shop\"",
           images: ["/для авы копия.jpg", ],
@@ -448,6 +460,16 @@ function Contact() {
             <Phone className="mr-2" size={18} />
             +375 (44) 740-36-16
           </Button>
+            <Button
+                variant="outline"
+                className="flex items-center justify-center border-primary text-primary hover:bg-primary hover:text-primary-foreground rounded">
+                <Link
+                    href="https://www.instagram.com/nastasia_kim_/?hl=ru"
+                >
+                    <Instagram className="mr-2" size={18} />
+                </Link>
+            </Button>
+
         </div>
         <form onSubmit={handleSubmit} className="space-y-4">
           <Input name="name" placeholder="Ваше имя" className="border-muted rounded" required />
