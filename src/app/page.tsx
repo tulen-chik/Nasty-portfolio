@@ -317,12 +317,6 @@ function Projects() {
           technologies: ["Illustrator", "Photoshop"]
       },
       {
-          title: "Логотип для vape shop \"Capybara vape\"",
-          images: ["/capy.jpg"  ],
-          description: "Разработка логотипа для vape shop \"Capybara vape\"",
-          technologies: ["Illustrator", "Photoshop"]
-      },
-      {
           title: "Фотосессия \"Частный психолог\"",
           images: ["/photo/2.jpg", "/photo/3.jpg", "/photo/7.jpg", "/photo/8.jpg", "/photo/9.jpg", "/photo/10.jpg" ],
           description: "Разработка и дизайн подарочной упаковки чая, с использованием вытинанки.",
@@ -344,12 +338,6 @@ function Projects() {
           title: "Иллюстрации для принта на футболку",
           images: ["/ilustration/a.jpg", "/ilustration/meat.jpg", ],
           description: "Разработка и дизайн иллюстраций для принта на футболку.",
-          technologies: ["Illustrator", "Photoshop"]
-      },
-      {
-          title: "Логотип для vape shop \"Start Vape Shop\"",
-          images: ["/для авы копия.jpg", ],
-          description: "Разработка логотипа для vape shop \"Start Vape Shop\".",
           technologies: ["Illustrator", "Photoshop"]
       },
       {
@@ -376,12 +364,19 @@ function Projects() {
           description: "Разработка шрифта на русском языке.",
           technologies: ["Illustrator", "Photoshop"]
       },
-      // {
-      //     title: "Плакаты \"ATI.SU\"",
-      //     images: ["/ilustration/a.jpg", "/ilustration/meat.jpg", ],
-      //     description: "Разработка и дизайн плакатов на тему \"Биржа грузоперевозок ATI.SU\".",
-      //     technologies: ["фотографика", "Photoshop"]
-      // },
+      {
+          title: "Логотип для vape shop \"Capybara vape\"",
+          images: ["/capy.jpg"  ],
+          description: "Разработка логотипа для vape shop \"Capybara vape\"",
+          technologies: ["Illustrator", "Photoshop"]
+      },
+
+      {
+          title: "Логотип для vape shop \"Start Vape Shop\"",
+          images: ["/для авы копия.jpg", ],
+          description: "Разработка логотипа для vape shop \"Start Vape Shop\".",
+          technologies: ["Illustrator", "Photoshop"]
+      },
   ]
 
     return (
