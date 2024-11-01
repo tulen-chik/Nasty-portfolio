@@ -466,7 +466,7 @@ function Contact() {
                 <Link
                     href="https://www.instagram.com/nastasia_kim_/?hl=ru"
                 >
-                    <Instagram className="mr-2" size={18} />
+                    <Instagram size={18} />
                 </Link>
             </Button>
 
