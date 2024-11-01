@@ -282,7 +282,7 @@ function Projects() {
     },
     {
       title: "Дизайн упаковки чая \"Раніца\"",
-      images: ["/me.JPG"],
+      images: ["/me.JPG", "/IMG_1841.JPG", "/IMG_1899.JPG", ],
       description: "Разработка и дизайн подарочной упаковки чая, с использованием вытинанки.",
       technologies: ["Illustrator", "Photoshop"]
     },
@@ -353,8 +353,26 @@ function Projects() {
           technologies: ["Illustrator", "Photoshop"]
       },
       {
+          title: "Плакаты \"ATI.SU\"",
+          images: ["/доставка  копия.jpg", "/вселенная.jpg", "/пакмен.jpg",],
+          description: "Разработка и дизайн плакатов на тему \"Биржа грузоперевозок ATI.SU\".",
+          technologies: ["Illustrator", "Photoshop"]
+      },
+      {
+          title: "Календарь",
+          images: ["/календарь.jpg", ],
+          description: "Разработка и дизайн страницы в календаре.",
+          technologies: ["Illustrator", "Photoshop"]
+      },
+      {
+          title: "Фирменный стиль для кафе-пекарни \"Моретта\"",
+          images: ["/фирменный стиль1.jpg", "/фирменный стиль -2.jpg", ],
+          description: "Разработка и дизайн фирменного стиля для кафе-пекарни \"Моретта\".",
+          technologies: ["Illustrator", "Photoshop"]
+      },
+      {
           title: "Шрифт",
-          images: ["/шрифт на печать в кривых_Страница_1.jpg", ],
+          images: ["/шрифт на печать в кривых_Страница_1.jpg", "/шрифт на печать в кривых_Страница_2.jpg",],
           description: "Разработка шрифта на русском языке.",
           technologies: ["Illustrator", "Photoshop"]
       },
