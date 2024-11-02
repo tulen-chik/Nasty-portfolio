@@ -301,7 +301,7 @@ function Projects() {
       },
       {
           title: "Плакаты \"ATI.SU\"",
-          images: ["/доставка  копия.jpg", "/вселенная.jpg", "/пакмен.jpg",],
+          images: ["/доставка  копия.jpg", "/вселенная.jpg", "/пакмен.jpg", "/фото плакат.jpg",],
           description: "Разработка и дизайн плакатов на тему \"Биржа грузоперевозок ATI.SU\".",
           technologies: ["Illustrator", "Photoshop"]
       },
