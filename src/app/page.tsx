@@ -324,12 +324,6 @@ function Projects() {
           technologies: ["Illustrator", "Photoshop", "InDesign", ]
       },
       {
-          title: "Инфографика для маркетплейсов \"Защитное стекло для Realme c11\"",
-          images: ["/glass-1.jpg", "/glass-2.jpg", "/glass-3.jpg", "/glass-4.jpg", ],
-          description: "Разработка и дизайн инфографики для маркетплейсов \"Защитное стекло для Realme c11\".",
-          technologies: ["Illustrator", "Photoshop"]
-      },
-      {
           title: "Инфографика для маркетплейсов \"Наушники hoco\"",
           images: ["/headphones-1.jpg", "/headphones-2.jpg",  ],
           description: "Разработка и дизайн инфографики для маркетплейсов \"Наушники hoco\".",
@@ -339,6 +333,12 @@ function Projects() {
           title: "Инфографика для маркетплейсов \"Белая футболка с принтом \"",
           images: ["/t-shirt-1.jpg", "/t-shirt-2.jpg", "/t-shirt-3.jpg", "/t-shirt-4.jpg", "/t-shirt-5.jpg",  ],
           description: "Разработка и дизайн инфографики для маркетплейсов, а также разработка принта для футболки.",
+          technologies: ["Illustrator", "Photoshop"]
+      },
+      {
+          title: "Инфографика для маркетплейсов \"Защитное стекло для Realme c11\"",
+          images: ["/glass-1.jpg", "/glass-2.jpg", "/glass-3.jpg", "/glass-4.jpg", ],
+          description: "Разработка и дизайн инфографики для маркетплейсов \"Защитное стекло для Realme c11\".",
           technologies: ["Illustrator", "Photoshop"]
       },
     {
