@@ -344,13 +344,13 @@ function Projects() {
     {
       title: "Pop-up book \"Свято-Успенски кафедральный собор\"",
       images: ["/cathedral.JPG"],
-      description: "Разработка и дизайн pop-up book \"Свято-Успенский кафедральный собор\", с использованием вытинанки.",
+      description: "Разработка и дизайн pop-up book \"Свято-Успенский кафедральный собор\" с использованием вытинанки.",
       technologies: ["Illustrator", "Photoshop"]
     },
     {
       title: "Дизайн упаковки чая \"Раніца\"",
       images: ["/me.JPG", "/IMG_1841.JPG", "/IMG_1899.JPG", ],
-      description: "Разработка и дизайн подарочной упаковки чая, с использованием вытинанки.",
+      description: "Разработка и дизайн подарочной упаковки чая с использованием вытинанки.",
       technologies: ["Illustrator", "Photoshop"]
     },
       {
@@ -362,13 +362,19 @@ function Projects() {
       {
           title: "Фотосессия \"Частный психолог\"",
           images: ["/photo/2.jpg", "/photo/3.jpg", "/photo/7.jpg", "/photo/8.jpg", "/photo/9.jpg", "/photo/10.jpg" ],
-          description: "Разработка и дизайн подарочной упаковки чая, с использованием вытинанки.",
+          description: "Фотоссесия для частного психолога.",
           technologies: ["фотографика", "Photoshop"]
       },
       {
           title: "Фотосессия \"Бильярд\"",
           images: ["/poole/1.jpg", "/poole/3.jpg", "/poole/4.jpg", "/poole/5.jpg", "/poole/6.jpg", "/poole/14.jpg", "/poole/24.jpg", "/poole/48.jpg" ],
           description: "Фотоссесия для продажи бильярдных киев.",
+          technologies: ["фотографика", "Photoshop"]
+      },
+      {
+          title: "Уличная фотосессия",
+          images: ["/p1.jpg", "/p2.jpg", "/p3.jpg", ],
+          description: "Фотоссесия на улице.",
           technologies: ["фотографика", "Photoshop"]
       },
       {
@@ -409,7 +415,7 @@ function Projects() {
       },
       {
           title: "Визитка доя vape shop “Start Vape Shop”",
-          images: ["/визитки другой серый этот_Страница_1.jpg", "/визитки другой серый этот_Страница_1.jpg", ],
+          images: ["/визитки другой серый этот_Страница_1.jpg", "/визитки другой серый этот_Страница_2.jpg", ],
           description: "Дизайн визитки для vape shop “Start Vape Shop”",
           technologies: ["Illustrator", "Photoshop"]
       },
