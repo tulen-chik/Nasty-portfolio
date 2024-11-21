@@ -395,12 +395,7 @@ function Projects() {
           description: "Разработка шрифта на русском языке.",
           technologies: ["Illustrator", "Photoshop"]
       },
-      {
-          title: "Иллюстрации для принта на футболку",
-          images: ["/ilustration/a.jpg", "/ilustration/meat.jpg", ],
-          description: "Разработка и дизайн иллюстраций для принта на футболку.",
-          technologies: ["Illustrator", "Photoshop"]
-      },
+
       {
           title: "Логотип для vape shop \"Capybara vape\"",
           images: ["/capy.jpg"  ],
@@ -424,6 +419,12 @@ function Projects() {
           images: ["/photo.jpg", ],
           description: "Разработка 3D модели дома мечты",
           technologies: ["Cinema 4D", ]
+      },
+      {
+          title: "Иллюстрации для принта на футболку",
+          images: ["/ilustration/a.jpg", "/ilustration/meat.jpg", ],
+          description: "Разработка и дизайн иллюстраций для принта на футболку.",
+          technologies: ["Illustrator", "Photoshop"]
       },
   ]
 
