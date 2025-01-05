@@ -294,6 +294,12 @@ function Projects() {
           technologies: ["Illustrator", "Photoshop"]
       },
       {
+          title: "Фирменный стиль для бренда одежды \"Palmistry\"",
+          images: ["/68.jpg",  ],
+          description: "Разработка и дизайн фирменного стиля для бренда одежды \"Palmistry\".",
+          technologies: ["Illustrator", "Photoshop"]
+      },
+      {
           title: "Календарь",
           images: ["/календарь.jpg", ],
           description: "Разработка и дизайн страницы в календаре.",
