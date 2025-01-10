@@ -361,7 +361,7 @@ function Projects() {
     },
       {
           title: "Pop-up book \"Алиса в стране чудес\"",
-          images: ["/IMG_3760.JPG", "/IMG_3763.JPG", "/IMG_3767.JPG", "/IMG_3768.JPG" ],
+          images: ["/IMG_3760.JPG", "/IMG_3767.JPG", ],
           description: "Разработка и дизайн pop-up book \"Алиса в стране чудес\".",
           technologies: ["Illustrator", "Photoshop"]
       },
@@ -415,9 +415,9 @@ function Projects() {
           technologies: ["Illustrator", "Photoshop"]
       },
       {
-          title: "Визитка доя vape shop “Start Vape Shop”",
-          images: ["/визитки другой серый этот_Страница_1.jpg", "/визитки другой серый этот_Страница_2.jpg", ],
-          description: "Дизайн визитки для vape shop “Start Vape Shop”",
+          title: "Иллюстрации для принта на футболку",
+          images: ["/ilustration/a.jpg", "/ilustration/meat.jpg", ],
+          description: "Разработка и дизайн иллюстраций для принта на футболку.",
           technologies: ["Illustrator", "Photoshop"]
       },
       {
@@ -427,9 +427,9 @@ function Projects() {
           technologies: ["Cinema 4D", ]
       },
       {
-          title: "Иллюстрации для принта на футболку",
-          images: ["/ilustration/a.jpg", "/ilustration/meat.jpg", ],
-          description: "Разработка и дизайн иллюстраций для принта на футболку.",
+          title: "Визитка для vape shop “Start Vape Shop”",
+          images: ["/визитки другой серый этот_Страница_1.jpg", "/визитки другой серый этот_Страница_2.jpg", ],
+          description: "Дизайн визитки для vape shop “Start Vape Shop”",
           technologies: ["Illustrator", "Photoshop"]
       },
   ]
