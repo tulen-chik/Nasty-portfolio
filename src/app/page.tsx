@@ -401,13 +401,13 @@ function Projects() {
           description: "Разработка шрифта на русском языке.",
           technologies: ["Illustrator", "Photoshop"]
       },
-
       {
-          title: "Логотип для vape shop \"Capybara vape\"",
-          images: ["/capy.jpg"  ],
-          description: "Разработка логотипа для vape shop \"Capybara vape\"",
+          title: "Визитка для vape shop “Start Vape Shop”",
+          images: ["/визитки другой серый этот_Страница_1.jpg", "/визитки другой серый этот_Страница_2.jpg", ],
+          description: "Дизайн визитки для vape shop “Start Vape Shop”",
           technologies: ["Illustrator", "Photoshop"]
       },
+
       {
           title: "Логотип для vape shop \"Start Vape Shop\"",
           images: ["/для авы копия.jpg", ],
@@ -426,12 +426,7 @@ function Projects() {
           description: "Разработка 3D модели дома мечты",
           technologies: ["Cinema 4D", ]
       },
-      {
-          title: "Визитка для vape shop “Start Vape Shop”",
-          images: ["/визитки другой серый этот_Страница_1.jpg", "/визитки другой серый этот_Страница_2.jpg", ],
-          description: "Дизайн визитки для vape shop “Start Vape Shop”",
-          technologies: ["Illustrator", "Photoshop"]
-      },
+
   ]
 
     return (
