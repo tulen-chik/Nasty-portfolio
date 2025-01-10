@@ -402,18 +402,18 @@ function Projects() {
           technologies: ["Illustrator", "Photoshop"]
       },
       {
+          title: "Логотип для vape shop \"Start Vape Shop\"",
+          images: ["/Card.jpg", ],
+          description: "Разработка логотипа для vape shop \"Start Vape Shop\".",
+          technologies: ["Illustrator", "Photoshop"]
+      },
+      {
           title: "Визитка для vape shop “Start Vape Shop”",
           images: ["/визитки другой серый этот_Страница_1.jpg", "/визитки другой серый этот_Страница_2.jpg", ],
           description: "Дизайн визитки для vape shop “Start Vape Shop”",
           technologies: ["Illustrator", "Photoshop"]
       },
 
-      {
-          title: "Логотип для vape shop \"Start Vape Shop\"",
-          images: ["/для авы копия.jpg", ],
-          description: "Разработка логотипа для vape shop \"Start Vape Shop\".",
-          technologies: ["Illustrator", "Photoshop"]
-      },
       {
           title: "Иллюстрации для принта на футболку",
           images: ["/ilustration/a.jpg", "/ilustration/meat.jpg", ],
