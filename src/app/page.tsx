@@ -403,13 +403,13 @@ function Projects() {
       },
       {
           title: "Логотип для vape shop \"Start Vape Shop\"",
-          images: ["/Card.jpg", ],
+          images: ["/для авы копия.jpg", ],
           description: "Разработка логотипа для vape shop \"Start Vape Shop\".",
           technologies: ["Illustrator", "Photoshop"]
       },
       {
           title: "Визитка для vape shop “Start Vape Shop”",
-          images: ["/визитки другой серый этот_Страница_1.jpg", "/визитки другой серый этот_Страница_2.jpg", ],
+          images: ["/Card.jpg", ],
           description: "Дизайн визитки для vape shop “Start Vape Shop”",
           technologies: ["Illustrator", "Photoshop"]
       },
