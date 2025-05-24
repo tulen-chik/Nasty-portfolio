@@ -32,6 +32,7 @@ import 'react-toastify/dist/ReactToastify.css'
 import { sendEmail } from '@/actions/sendEmail'
 import useEmblaCarousel from 'embla-carousel-react'
 import Link from "next/link";
+import { ProjectGrid } from "@/components/ui/project-grid"
 
 interface Project {
     title: string
@@ -431,12 +432,14 @@ function Projects() {
 
     return (
         <section id="projects">
-            <h2 className="text-2xl md:text-3xl font-bold mb-8 text-primary">Проекты</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {projects.map((project, index) => (
-                    <ProjectDialog key={index} project={project} />
-                ))}
-            </div>
+            <h2 className="text-xl md:text-2xl font-bold mb-8 text-primary">Проекты</h2>
+            <ProjectGrid
+                projects={projects}
+                columns={3}
+                gap="lg"
+                variant="glass"
+                className="mt-8"
+            />
         </section>
     )
 }
@@ -493,7 +496,7 @@ function Contact() {
           <Button
               variant="outline"
               className="flex items-center justify-center border-primary text-primary hover:bg-primary hover:text-primary-foreground rounded"
-              onClick={() => copyToClipboard('+7 (999) 123-45-67', 'Номер телефона')}
+              onClick={() => copyToClipboard('+375447403616', 'Номер телефона')}
           >
             <Phone className="mr-2" size={18} />
             +375 (44) 740-36-16
