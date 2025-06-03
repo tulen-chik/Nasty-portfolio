@@ -8,6 +8,7 @@ interface ProjectGridProps extends React.HTMLAttributes<HTMLDivElement> {
   gap?: "sm" | "md" | "lg"
   variant?: "default" | "glass" | "gradient"
   size?: "default" | "compact"
+  onProjectClick?: (project: Project) => void
 }
 
 const ProjectGrid = React.forwardRef<HTMLDivElement, ProjectGridProps>(
@@ -18,6 +19,7 @@ const ProjectGrid = React.forwardRef<HTMLDivElement, ProjectGridProps>(
     gap = "md",
     variant = "default",
     size = "default",
+    onProjectClick,
     ...props
   }, ref) => {
     return (
@@ -44,6 +46,8 @@ const ProjectGrid = React.forwardRef<HTMLDivElement, ProjectGridProps>(
             variant={variant}
             size={size}
             project={project}
+            onClick={onProjectClick}
+            index={index}
           />
         ))}
       </div>
