@@ -318,6 +318,12 @@ function Projects() {
           technologies: ["Illustrator", "Photoshop"]
       },
       {
+        title: "Логотип для компании \"Цуруги\"",
+        images: ["/Аватарка.png", ],
+        description: "Разработка и дизайн логотипа для компании \"Цуруги\".",
+        technologies: ["Illustrator", "Photoshop"]
+    },
+      {
           title: "Плакаты \"ATI.SU\"",
           images: ["/доставка  копия.jpg", "/вселенная.jpg", "/пакмен.jpg", "/фото плакат.jpg",],
           description: "Разработка и дизайн плакатов на тему \"Биржа грузоперевозок ATI.SU\".",
@@ -379,7 +385,7 @@ function Projects() {
       },
       {
           title: "Фотосессия \"Частный психолог\"",
-          images: ["/photo/2.jpg", "/photo/3.jpg", "/photo/7.jpg", "/photo/8.jpg", "/photo/9.jpg", "/photo/10.jpg" ],
+          images: ["/photo/3.jpg", "/photo/7.jpg", "/photo/8.jpg", "/photo/9.jpg", "/photo/10.jpg" ],
           description: "Фотоссесия для частного психолога.",
           technologies: ["фотографика", "Photoshop"]
       },
@@ -397,13 +403,13 @@ function Projects() {
       },
       {
           title: "Фотосессия \"Тату-салон\"",
-          images: ["/tatoo/1.JPG", "/tatoo/3.JPG", "/tatoo/4.JPG", "/tatoo/6.JPG", "/tatoo/9.JPG", "/tatoo/10.JPG", "/tatoo/17.jpg" ],
+          images: ["/tatoo/1.JPG", "/tatoo/3.JPG", "/tatoo/6.JPG", "/tatoo/9.JPG", "/tatoo/10.JPG" ],
           description: "Фотоссесия для тату-салона \"Vipink\".",
           technologies: ["фотографика", "Photoshop"]
       },
       {
           title: "Упаковка макарон \"Макаронни\"",
-          images: ["/mac.jpg"],
+          images: ["/mac.jpg", "/mac2.jpg"],
           description: "Разработка и дизайн упаковки макарон для детей \"Макаронни\".",
           technologies: ["Illustrator", "Photoshop"]
       },
@@ -425,19 +431,18 @@ function Projects() {
           description: "Дизайн визитки для vape shop “Start Vape Shop”",
           technologies: ["Illustrator", "Photoshop"]
       },
-
-      {
-          title: "Иллюстрации для принта на футболку",
-          images: ["/ilustration/a.jpg", "/ilustration/meat.jpg", ],
-          description: "Разработка и дизайн иллюстраций для принта на футболку.",
-          technologies: ["Illustrator", "Photoshop"]
-      },
       {
           title: "3D модель дома",
           images: ["/photo.jpg", ],
           description: "Разработка 3D модели дома мечты",
           technologies: ["Cinema 4D", ]
       },
+      {
+        title: "Фотосессия \"Страйкбол\"",
+        images: ["/strikeball/15.JPG", "/strikeball/22.JPG", "/strikeball/52.JPG", "/strikeball/55.JPG", "/strikeball/59.JPG", "/strikeball/61.JPG" ],
+        description: "Фотоссесия для игры Страйкбол.",
+        technologies: ["фотографика", "Photoshop"]
+    },
 
   ]
 
