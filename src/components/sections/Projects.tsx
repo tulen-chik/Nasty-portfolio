@@ -222,7 +222,7 @@ function Projects() {
         },
         {
           title: "Фотосессия для игры страйкбол",
-          images: ["/strikeball/15.JPG", "/strikeball/22.JPG", "/strikeball/52.JPG", "/strikeball/55.JPG", "/strikeball/59.JPG", "/strikeball/61.JPG", "/strikeball/17.jpg" ],
+          images: ["/strikeball/15.jpg", "/strikeball/22.jpg", "/strikeball/52.jpg", "/strikeball/55.jpg", "/strikeball/59.jpg", "/strikeball/61.jpg" ],
           description: "Фотоссесия для игры страйкбол.",
           technologies: ["фотографика", "Photoshop"]
       },
