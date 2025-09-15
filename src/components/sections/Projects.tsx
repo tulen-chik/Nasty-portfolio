@@ -198,13 +198,13 @@ function Projects() {
         },
         {
             title: "Фотосессия \"Частный психолог\"",
-            images: ["/photo/2.jpg", "/photo/3.jpg", "/photo/7.jpg", "/photo/8.jpg", "/photo/9.jpg", "/photo/10.jpg" ],
+            images: [ "/photo/3.jpg", "/photo/7.jpg", "/photo/8.jpg", "/photo/9.jpg", "/photo/10.jpg" ],
             description: "Фотоссесия для частного психолога.",
             technologies: ["фотографика", "Photoshop"]
         },
         {
             title: "Фотосессия \"Бильярд\"",
-            images: ["/poole/1.jpg", "/poole/3.jpg", "/poole/4.jpg", "/poole/5.jpg", "/poole/6.jpg", "/poole/14.jpg", "/poole/24.jpg", "/poole/48.jpg" ],
+            images: ["/poole/1.jpg", "/poole/3.jpg", "/poole/5.jpg", "/poole/24.jpg", "/poole/48.jpg" ],
             description: "Фотоссесия для продажи бильярдных киев.",
             technologies: ["фотографика", "Photoshop"]
         },
@@ -216,13 +216,19 @@ function Projects() {
         },
         {
             title: "Фотосессия \"Тату-салон\"",
-            images: ["/tatoo/1.JPG", "/tatoo/3.JPG", "/tatoo/4.JPG", "/tatoo/6.JPG", "/tatoo/9.JPG", "/tatoo/10.JPG", "/tatoo/17.jpg" ],
+            images: ["/tatoo/1.JPG", "/tatoo/3.JPG", "/tatoo/6.JPG", "/tatoo/9.JPG", "/tatoo/10.JPG" ],
             description: "Фотоссесия для тату-салона \"Vipink\".",
             technologies: ["фотографика", "Photoshop"]
         },
         {
+          title: "Фотосессия для игры страйкбол",
+          images: ["/strikeball/15.JPG", "/strikeball/22.JPG", "/strikeball/52.JPG", "/strikeball/55.JPG", "/strikeball/59.JPG", "/strikeball/61.JPG", "/strikeball/17.jpg" ],
+          description: "Фотоссесия для игры страйкбол.",
+          technologies: ["фотографика", "Photoshop"]
+      },
+        {
             title: "Упаковка макарон \"Макаронни\"",
-            images: ["/mac.jpg"],
+            images: ["/mac.jpg", "/mac2.jpg"],
             description: "Разработка и дизайн упаковки макарон для детей \"Макаронни\".",
             technologies: ["Illustrator", "Photoshop"]
         },
@@ -239,18 +245,24 @@ function Projects() {
             technologies: ["Illustrator", "Photoshop"]
         },
         {
+          title: "Логотип для \"Цуруги\"",
+          images: ["/Аватарка.png", ],
+          description: "Разработка логотипа для \"Цуруги\".",
+          technologies: ["Illustrator", "Photoshop"]
+      },
+        {
             title: "Визитка для vape shop “Start Vape Shop”",
             images: ["/Card.jpg", ],
             description: "Дизайн визитки для vape shop “Start Vape Shop”",
             technologies: ["Illustrator", "Photoshop"]
         },
 
-        {
-            title: "Иллюстрации для принта на футболку",
-            images: ["/ilustration/a.jpg", "/ilustration/meat.jpg", ],
-            description: "Разработка и дизайн иллюстраций для принта на футболку.",
-            technologies: ["Illustrator", "Photoshop"]
-        },
+        // {
+        //     title: "Иллюстрации для принта на футболку",
+        //     images: ["/ilustration/a.jpg", "/ilustration/meat.jpg", ],
+        //     description: "Разработка и дизайн иллюстраций для принта на футболку.",
+        //     technologies: ["Illustrator", "Photoshop"]
+        // },
         {
             title: "3D модель дома",
             images: ["/photo.jpg", ],
